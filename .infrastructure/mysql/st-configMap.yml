@@ -5,7 +5,7 @@ metadata:
   namespace: mysql
 data:
   init.sql: |
-    GRANT ALL PREVILEGES ON todoapp_db TO 'app_client'@'%';
+    GRANT ALL PRIVILEGES ON todoapp_db TO 'app_client'@'%';
     USE todoapp_db;
     CREATE TABLE notes (
         id INT AUTO_INCREMENT PRIMARY KEY,

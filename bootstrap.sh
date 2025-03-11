@@ -16,7 +16,7 @@ echo "Applying config map"
 
 kubectl apply -f .infrastructure/mysql/st-configMap.yml
 
-sleep 5
+sleep 3
 
 echo "Starting Stateful Set"
 
@@ -27,6 +27,8 @@ kubectl apply -f .infrastructure/configMap.yml
 kubectl apply -f .infrastructure/secret.yml
 
 kubectl apply -f .infrastructure/pv.yml
+
+sleep 3
 
 kubectl apply -f .infrastructure/pvc.yml
 
